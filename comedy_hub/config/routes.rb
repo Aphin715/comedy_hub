@@ -1,4 +1,6 @@
 ComedyHub::Application.routes.draw do
+  resources :comedy_clubs
+
   resources :shows
 
   resources :comedians

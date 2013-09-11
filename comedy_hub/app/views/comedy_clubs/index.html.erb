@@ -1,0 +1,29 @@
+<h1>Listing comedy_clubs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @comedy_clubs.each do |comedy_club| %>
+      <tr>
+        <td><%= comedy_club.name %></td>
+        <td><%= comedy_club.location %></td>
+        <td><%= link_to 'Show', comedy_club %></td>
+        <td><%= link_to 'Edit', edit_comedy_club_path(comedy_club) %></td>
+        <td><%= link_to 'Destroy', comedy_club, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Comedy club', new_comedy_club_path %>

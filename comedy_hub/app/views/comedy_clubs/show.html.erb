@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @comedy_club.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @comedy_club.location %>
+</p>
+
+<%= link_to 'Edit', edit_comedy_club_path(@comedy_club) %> |
+<%= link_to 'Back', comedy_clubs_path %>
