@@ -1,5 +1,7 @@
 require 'spec_helper'
 
 describe Show do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it {should belong_to(:comedy_club)}
+  it {should have_many(:acts)}
+  it {should validate_presence_of(:comedy_club)}
 end
