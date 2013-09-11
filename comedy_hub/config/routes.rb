@@ -1,4 +1,6 @@
 ComedyHub::Application.routes.draw do
+  resources :shows
+
   resources :comedians
 
   # The priority is based upon order of creation: first created -> highest priority.
