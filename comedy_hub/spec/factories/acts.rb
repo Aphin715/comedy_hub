@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :act do
-    comedian_id 1
-    show_id 1
+    association :comedian
+    association :show
   end
 end

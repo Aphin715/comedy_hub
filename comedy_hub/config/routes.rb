@@ -1,9 +1,15 @@
 ComedyHub::Application.routes.draw do
+  resources :acts
+
+  get "welcome/index"
+
   resources :comedy_clubs
 
   resources :shows
 
   resources :comedians
+
+  resource :comedy_hub
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -45,7 +51,7 @@ ComedyHub::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
