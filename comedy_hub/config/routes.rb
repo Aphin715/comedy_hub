@@ -1,4 +1,5 @@
 ComedyHub::Application.routes.draw do
+  get "users/new"
   resources :acts
 
   get "welcome/index"
