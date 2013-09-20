@@ -1,16 +1,12 @@
 ComedyHub::Application.routes.draw do
   get "users/new"
   resources :acts
-
   get "welcome/index"
-
   resources :comedy_clubs
-
   resources :shows
-
   resources :comedians
-
   resource :comedy_hub
+  resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
