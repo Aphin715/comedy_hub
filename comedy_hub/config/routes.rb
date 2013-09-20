@@ -1,7 +1,8 @@
-ComedyHub::Application.routes.draw do
+ ComedyHub::Application.routes.draw do
   get "users/new"
-  resources :acts
   get "welcome/index"
+  resources :acts
+
   resources :comedy_clubs
   resources :shows
   resources :comedians
