@@ -1,5 +1,5 @@
  ComedyHub::Application.routes.draw do
-  get "users/new"
+  match '/signup',  to: 'users#new',            via: 'get'
   get "welcome/index"
   resources :acts
 
